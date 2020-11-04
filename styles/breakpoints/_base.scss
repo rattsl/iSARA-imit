@@ -55,11 +55,48 @@ img {
 }
 
 .sub-title{
-  @extend .font-sm;
-  color: $cSubTitle;
+  font-size: 10px;
+  margin-bottom: 0;
+  font-weight: 600;
 }
 
 .flex{
   display: flex;
   flex-direction: column;
+}
+
+.header{
+  @extend .flex;
+
+  position: relative;
+  flex-direction: row;  
+  justify-content: space-between;
+  align-items: center;
+  height: 62px;
+
+  &__inner{
+    padding-left: 7px;
+  }
+
+  &__logo{
+    width: 40%;
+  }
+
+  &__form{
+    height: 62px;
+    padding: 9px 11px;
+    text-align: center;
+    background-color:#da6b64;
+
+    & > img{
+      width: 20px;
+    }
+
+    & > p{
+      margin-bottom: 0;
+      color: $cWhite;
+      font-size: 12px;
+    }
+
+  }
 }
