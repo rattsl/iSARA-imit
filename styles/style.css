@@ -4,25 +4,23 @@
 Stylesheet: ベーススタイル(スマホ)
 
 ******************************************************************/
-body {
-  font-family: 'Kameron', 'Noto Sans JP', sans-serif;
-}
-
 img {
   max-width: 100%;
   vertical-align: bottom;
 }
 
 .font-sm {
-  font-size: 14px;
+  font-size: 15px;
+  font-weight: 600;
 }
 
 .font-md {
-  font-size: 17px;
+  font-size: 18px;
 }
 
 .font-lr {
-  font-size: 17px;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .font-lg, .main-title {
@@ -73,7 +71,6 @@ img {
 }
 
 .header {
-  position: relative;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -110,5 +107,28 @@ img {
   margin-bottom: 0;
   color: white;
   font-size: 12px;
+}
+
+.hero__inner {
+  width: 100%;
+  height: 312px;
+  background-image: url("../../images/mainsp.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.hero__texts {
+  text-align: center;
+  padding: 25px 0 25px 0;
+}
+
+.hero__texts > p {
+  margin: 0;
+}
+
+.hero__logo {
+  width: 90%;
+  max-width: 317px;
+  margin: 25px 0 25px 0;
 }
 /*# sourceMappingURL=style.css.map */

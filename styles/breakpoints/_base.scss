@@ -4,10 +4,7 @@ Stylesheet: ベーススタイル(スマホ)
 
 ******************************************************************/
 
-//ローマ字日本語の順で書く
-body{
-  font-family: 'Kameron', 'Noto Sans JP', sans-serif;
-}
+
 
 img {
   max-width: 100%;
@@ -16,13 +13,15 @@ img {
 
 //Font
 .font-sm{
-  font-size: 14px;
+  font-size: 15px;
+  font-weight: 600;
 }
 .font-md{
-  font-size: 17px;
+  font-size: 18px;
 }
 .font-lr{
-  font-size: 17px;
+  font-size: 18px;
+  font-weight: 600;
 }
 .font-lg{
   font-size: 25x;
@@ -68,7 +67,6 @@ img {
 .header{
   @extend .flex;
 
-  position: relative;
   flex-direction: row;  
   justify-content: space-between;
   align-items: center;
@@ -99,4 +97,56 @@ img {
     }
 
   }
+}
+
+// .hero{
+//   position: relative;
+
+//   &__inner{
+//     position: relative;
+//     top: 0;
+//     left: 0;
+//   }
+
+//   &__img{
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     z-index: -1;
+//     width: 100%;
+//     transform: translateY(-28px);
+//   }
+
+//   &__texts{
+//     position: absolute;
+   
+//   }
+// }
+
+.hero{
+
+  &__inner{
+    width: 100%;
+    height: 312px;
+    background-image: url("../../images/mainsp.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__texts{
+    text-align: center;
+    padding: 25px 0 25px 0;
+
+    & > p{
+      margin: 0;
+    }
+  }
+
+  &__logo{
+    width: 90%;
+    max-width: 317px;
+    margin: 25px 0 25px 0;
+  }
+
+  
 }
