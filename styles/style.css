@@ -9,7 +9,7 @@ img {
   vertical-align: bottom;
 }
 
-.font-sm {
+.font-sm, .conversion__inner {
   font-size: 15px;
   font-weight: 600;
 }
@@ -43,7 +43,7 @@ img {
   padding-bottom: 80px !important;
 }
 
-.content-width {
+.content-width, .conversion__inner {
   width: 90%;
   margin: 0 auto;
   max-width: 1070px;
@@ -130,5 +130,34 @@ img {
   width: 90%;
   max-width: 317px;
   margin: 25px 0 25px 0;
+}
+
+.conversion {
+  text-align: center;
+  background-color: #ebb94d;
+  color: white;
+}
+
+.conversion__enph {
+  background-color: white;
+  color: #c7254e;
+  border-radius: 4px;
+}
+
+.conversion__button {
+  cursor: pointer;
+  padding: 15px 20px;
+  background-color: #da6b64;
+  border-radius: 50px;
+  border: none;
+  color: #fff;
+  margin: 10px 20px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  max-width: 1028px;
+}
+
+.conversion__button > p {
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */
