@@ -43,7 +43,7 @@ img {
   padding-bottom: 80px !important;
 }
 
-.content-width, .conversion__inner, .introduction {
+.content-width, .conversion__inner, .introduction__yellowBracket, .introduction__texts {
   width: 90%;
   margin: 0 auto;
   max-width: 1070px;
@@ -198,11 +198,18 @@ img {
           box-sizing: border-box;
 }
 
-.introduction__texts {
+.introduction__contents {
+  background: url("../../images/introbottom.jpg");
+  background-size: contain;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  height: 470px;
+  text-align: center;
+  padding: 40px 0;
   text-align: center;
 }
 
-.introduction__texts > p {
-  font-weight: 300;
+.introduction__texts {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
