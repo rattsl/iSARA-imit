@@ -161,8 +161,6 @@ img {
 }
 
 .introduction{
-  @extend .mb-sm;
-
   &__yellowBracket{
     @extend .content-width;
     @extend .mb-sm;
@@ -172,34 +170,8 @@ img {
 
   &__title{
     @extend .font-lr;
-
-    line-height: 40px;
-    padding: 20px;
-    text-align: center;
-    margin-bottom: 20px;
-
-    &::before{
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 30px;
-      height: 30px;
-      border-top: 4px solid #ebb94d;
-      border-left: 4px solid #ebb94d;
-      box-sizing: border-box;
-    }
-    &::after{
-      content: "";
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      width: 30px;
-      height: 30px;
-      border-bottom: 4px solid #ebb94d;
-      border-right: 4px solid #ebb94d;
-      box-sizing: border-box;
-    }
+    @extend .bracket;
+    @extend .content-width;
   }
 
   &__contents{
@@ -218,16 +190,78 @@ img {
     
     text-align: center;
   }
+}
 
-  // &__image{
-  //   position: relative;
-  //   z-index: -1;
-  //   background: url("../../images/introbottom.jpg");
-  //   width: 100%;
-  //   height: 0px;
-  //   padding-top: calc(587 / 1200 * 100%);
-  //   background-repeat: no-repeat;
-  //   background-size: contain;
-  //   background-position: center bottom;
-  // }
+.about{
+  text-align: center;
+  background-color: #fef5e0;
+
+  &__icon{
+    background-color: #ebb94d;
+    color: $cWhite;
+    border-radius: 50%;
+    padding: 0;
+    margin: 0;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 12px;
+    display: inline-block;
+    text-align: center;
+    transform: translateY(-30px)
+  }
+
+  &__title{
+    @extend .content-width;
+    @extend .bracket;
+    @extend .font-lr;
+    @extend .mb-sm;
+  }
+
+  &__sub-title{
+    @extend .content-width;
+    @extend .font-sm;
+    @extend .mb-sm;
+  }
+
+  &__contents{
+    @extend .content-width;
+  }
+
+  &__text{
+    width: 100%;
+    margin: 15px 0;
+  }
+
+  &__box-container{
+    @extend .flex;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: $cWhite;
+    border: 2px solid #ebb94d;
+    border-radius: 5px;
+    padding: 10px;
+
+    & > .box{
+      display: inline-block;
+      padding: 5px;
+      width: 120px;
+      height: 90px;
+
+      & > img{
+        height: 30px;
+        width: auto;
+      }
+
+      & > p{
+        font-size: 10px;
+        margin: 10px 0;
+      }
+      
+    }
+  }
+
 }
