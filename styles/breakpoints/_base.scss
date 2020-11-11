@@ -4,7 +4,9 @@ Stylesheet: ベーススタイル(スマホ)
 
 ******************************************************************/
 
-
+body{
+  letter-spacing: 1.5px;
+}
 
 img {
   max-width: 100%;
@@ -12,6 +14,11 @@ img {
 }
 
 //Font
+.font-sr{
+  font-size: 12px;
+  font-weight: 600;
+}
+
 .font-sm{
   font-size: 15px;
   font-weight: 600;
@@ -42,7 +49,7 @@ img {
 }
 
 .content-width{
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
   max-width: $contentMaxWidth;
 }
@@ -195,6 +202,7 @@ img {
 .about{
   text-align: center;
   background-color: #fef5e0;
+  padding-bottom: 70px; 
 
   &__icon{
     background-color: #ebb94d;
@@ -244,6 +252,7 @@ img {
     border: 2px solid #ebb94d;
     border-radius: 5px;
     padding: 10px;
+    margin: 10px;
 
     & > .box{
       display: inline-block;
@@ -264,4 +273,83 @@ img {
     }
   }
 
+}
+
+.aboutsecond{
+  &__contents{
+    background: url("../../images/aboutsecondbgsp.jpg") center top no-repeat;
+    padding: 50px 0;
+  }
+
+  &__title{
+    @extend .content-width;
+    @extend .font-lr;
+
+    color: $cWhite;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  &__explain{
+    @extend .content-width;
+    @extend .font-sr;
+
+    color: $cWhite;
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+
+  &__container{
+    @extend .content-width;
+    @extend .flex;
+  }
+
+  &__box{
+    background-color: $cWhite;
+    margin: 10px 20px;
+    padding: 15px 50px;
+    border-radius: 5px;
+  }
+
+  &__step{
+    @extend .font-sr;
+    @extend .content-width;
+
+    background-color: #ebb94d;
+    color: $cWhite;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+
+  &__flow{
+    @extend .font-sr;
+
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  &__flow-t{
+    @extend .font-sr;
+
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  &__footer{
+    @extend .font-sr;
+
+    background-color: #016ea9;
+    color: $cWhite;
+    text-align: center;
+    padding: 20px 0;
+
+    & > p{
+      @extend .content-width;
+    }
+  }
+
+  &__enph{
+    color: #ebb94d;
+  }
 }
