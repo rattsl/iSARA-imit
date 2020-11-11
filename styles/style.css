@@ -47,12 +47,12 @@ img {
   vertical-align: bottom;
 }
 
-.font-sr, .aboutsecond__explain, .aboutsecond__step, .aboutsecond__flow, .aboutsecond__flow-t, .aboutsecond__footer {
+.font-sr, .aboutsecond__explain, .aboutsecond__step, .aboutsecond__flow, .aboutsecond__flow-t, .aboutsecond__footer, .learning__conclusion {
   font-size: 12px;
   font-weight: 600;
 }
 
-.font-sm, .conversion__inner, .about__sub-title {
+.font-sm, .conversion__inner, .about__sub-title, .learning__texts {
   font-size: 15px;
   font-weight: 600;
 }
@@ -61,7 +61,7 @@ img {
   font-size: 18px;
 }
 
-.font-lr, .introduction__title, .about__title, .aboutsecond__title {
+.font-lr, .introduction__title, .about__title, .aboutsecond__title, .learning__title {
   font-size: 18px;
   font-weight: 600;
 }
@@ -86,7 +86,7 @@ img {
   padding-bottom: 80px !important;
 }
 
-.content-width, .conversion__inner, .introduction__yellowBracket, .introduction__title, .introduction__texts, .about__title, .about__sub-title, .about__contents, .aboutsecond__title, .aboutsecond__explain, .aboutsecond__container, .aboutsecond__step, .aboutsecond__footer > p {
+.content-width, .conversion__inner, .introduction__yellowBracket, .introduction__title, .introduction__texts, .about__title, .about__sub-title, .about__contents, .aboutsecond__title, .aboutsecond__explain, .aboutsecond__container, .aboutsecond__step, .aboutsecond__footer > p, .learning__title, .learning__texts, .learning__container, .learning__conclusion {
   width: 95%;
   margin: 0 auto;
   max-width: 1070px;
@@ -103,7 +103,7 @@ img {
   font-weight: 600;
 }
 
-.flex, .header, .about__box-container, .aboutsecond__container {
+.flex, .header, .about__box-container, .aboutsecond__container, .learning__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -339,5 +339,44 @@ img {
 
 .aboutsecond__enph {
   color: #ebb94d;
+}
+
+.learning {
+  padding: 50px 0;
+}
+
+.learning__title {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.learning__texts {
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: 300;
+}
+
+.learning__container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 15px;
+}
+
+.learning__icon {
+  width: 60px;
+  height: auto;
+  padding: 5px;
+}
+
+.learning__conclusion {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

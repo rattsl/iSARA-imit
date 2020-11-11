@@ -353,3 +353,47 @@ img {
     color: #ebb94d;
   }
 }
+
+.learning{
+  padding: 50px 0; 
+
+  &__title{
+    @extend .content-width;
+    @extend .font-lr;
+
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  &__texts{
+    @extend .content-width;
+    @extend .font-sm;
+
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 300;
+  }
+
+  &__container{
+    @extend .flex;
+    @extend .content-width;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 15px;
+  }
+
+  &__icon{
+    width: 60px;
+    height: auto;
+    padding: 5px;
+  }
+
+  &__conclusion{
+    @extend .content-width;
+    @extend .font-sr;
+
+    text-align: center;
+  }
+}
