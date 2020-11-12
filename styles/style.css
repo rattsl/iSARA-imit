@@ -47,7 +47,7 @@ img {
   vertical-align: bottom;
 }
 
-.font-sr, .aboutsecond__explain, .aboutsecond__step, .aboutsecond__flow, .aboutsecond__flow-t, .aboutsecond__footer, .learning__conclusion, .merit__box > p, .merit__support > p, .merit__bottom {
+.font-sr, .aboutsecond__explain, .aboutsecond__step, .aboutsecond__flow, .aboutsecond__flow-t, .aboutsecond__footer, .learning__conclusion, .merit__box > p, .merit__support > p, .merit__bottom, .teacher__title, .teacher__text, .teacher__box > p {
   font-size: 12px;
   font-weight: 600;
 }
@@ -86,7 +86,7 @@ img {
   padding-bottom: 80px !important;
 }
 
-.content-width, .conversion__inner, .introduction__yellowBracket, .introduction__title, .introduction__texts, .about__title, .about__sub-title, .about__contents, .aboutsecond__title, .aboutsecond__explain, .aboutsecond__container, .aboutsecond__step, .aboutsecond__footer > p, .learning__title, .learning__texts, .learning__container, .learning__conclusion, .merit__title, .merit__container, .merit__box, .merit__support, .merit__support > h2, .merit__support > h3, .merit__support > p, .merit__bottom {
+.content-width, .conversion__inner, .introduction__yellowBracket, .introduction__title, .introduction__texts, .about__title, .about__sub-title, .about__contents, .aboutsecond__title, .aboutsecond__explain, .aboutsecond__container, .aboutsecond__step, .aboutsecond__footer > p, .learning__title, .learning__texts, .learning__container, .learning__conclusion, .merit__title, .merit__container, .merit__box, .merit__support, .merit__support > h2, .merit__support > h3, .merit__support > p, .merit__bottom, .teacher__container, .teacher__box > p {
   width: 95%;
   margin: 0 auto;
   max-width: 1070px;
@@ -103,7 +103,7 @@ img {
   font-weight: 600;
 }
 
-.flex, .header, .about__box-container, .aboutsecond__container, .learning__container, .merit__container {
+.flex, .header, .about__box-container, .aboutsecond__container, .learning__container, .merit__container, .teacher__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -436,5 +436,51 @@ img {
   margin-top: 1rem;
   text-align: center;
   font-weight: 300;
+}
+
+.teacher {
+  background: url("../../images/teacherbgsp.jpg") center top no-repeat;
+  padding: 20px 0;
+}
+
+.teacher__title {
+  margin: 40px 0;
+  text-align: center;
+  color: white;
+}
+
+.teacher__text {
+  margin: 40px 0;
+  color: white;
+  text-align: center;
+}
+
+.teacher__member {
+  position: relative;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.teacher__member > img {
+  position: relative;
+  z-index: 10;
+  width: 130px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.teacher__box {
+  position: relative;
+  z-index: 1;
+  border: 2.5px solid white;
+  padding-top: 50px;
+  -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
+  text-align: center;
+}
+
+.teacher__box > p {
+  color: white;
+  margin-bottom: 1rem;
 }
 /*# sourceMappingURL=style.css.map */

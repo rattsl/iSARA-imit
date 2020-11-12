@@ -490,3 +490,60 @@ img {
     font-weight: 300;
   }
 }
+
+.teacher{
+  background: url("../../images/teacherbgsp.jpg") center top no-repeat;
+  padding: 20px 0;
+
+  &__title{
+    @extend .font-sr;
+
+    margin: 40px 0;
+    text-align: center;
+    color: $cWhite;
+  }
+
+  &__text{
+    @extend .font-sr;
+
+    margin: 40px 0;
+    color: $cWhite;
+    text-align: center;
+  }
+
+  &__container{
+    @extend .flex;
+    @extend .content-width;
+  }
+
+  &__member{
+    position: relative;
+    text-align: center;
+    margin: 10px 0;
+
+    & > img{
+      position: relative;
+      z-index: 10;
+      width: 130px;
+      height: auto;
+      border-radius: 50%;
+    }
+  }
+
+  &__box{
+    position: relative;
+    z-index: 1;
+    border: 2.5px solid $cWhite;
+    padding-top: 50px;
+    transform: translateY(-40px); 
+    text-align: center;
+
+    & > p{
+      @extend .font-sr;
+      @extend .content-width;
+
+      color: $cWhite;
+      margin-bottom: 1rem; 
+    }
+  }
+}
