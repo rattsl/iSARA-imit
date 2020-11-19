@@ -47,7 +47,7 @@ img {
   vertical-align: bottom;
 }
 
-.font-sr, .aboutsecond__explain, .aboutsecond__step, .aboutsecond__flow, .aboutsecond__flow-t, .aboutsecond__footer, .learning__conclusion, .merit__box > p, .merit__support > p, .merit__bottom, .teacher__title, .teacher__text, .teacher__box > p {
+.font-sr, .aboutsecond__explain, .aboutsecond__step, .aboutsecond__flow, .aboutsecond__flow-t, .aboutsecond__footer, .learning__conclusion, .merit__box > p, .merit__support > p, .merit__bottom, .teacher__title, .teacher__text, .teacher__box > p, .answer__top > h3, .answer__top > p, .answer__texts {
   font-size: 12px;
   font-weight: 600;
 }
@@ -61,7 +61,7 @@ img {
   font-size: 18px;
 }
 
-.font-lr, .introduction__title, .about__title, .aboutsecond__title, .learning__title, .merit__title > h2, .merit__support > h2 {
+.font-lr, .introduction__title, .about__title, .aboutsecond__title, .learning__title, .merit__title > h2, .merit__support > h2, .answer__top > h2 {
   font-size: 18px;
   font-weight: 600;
 }
@@ -86,7 +86,7 @@ img {
   padding-bottom: 80px !important;
 }
 
-.content-width, .conversion__inner, .introduction__yellowBracket, .introduction__title, .introduction__texts, .about__title, .about__sub-title, .about__contents, .aboutsecond__title, .aboutsecond__explain, .aboutsecond__container, .aboutsecond__step, .aboutsecond__footer > p, .learning__title, .learning__texts, .learning__container, .learning__conclusion, .merit__title, .merit__container, .merit__box, .merit__support, .merit__support > h2, .merit__support > h3, .merit__support > p, .merit__bottom, .teacher__container, .teacher__box > p, .why__title {
+.content-width, .conversion__inner, .introduction__yellowBracket, .introduction__title, .introduction__texts, .about__title, .about__sub-title, .about__contents, .aboutsecond__title, .aboutsecond__explain, .aboutsecond__container, .aboutsecond__step, .aboutsecond__footer > p, .learning__title, .learning__texts, .learning__container, .learning__conclusion, .merit__title, .merit__container, .merit__box, .merit__support, .merit__support > h2, .merit__support > h3, .merit__support > p, .merit__bottom, .teacher__container, .teacher__box > p, .why__title, .answer {
   width: 95%;
   margin: 0 auto;
   max-width: 1070px;
@@ -103,7 +103,7 @@ img {
   font-weight: 600;
 }
 
-.flex, .header, .about__box-container, .aboutsecond__container, .learning__container, .merit__container, .teacher__container {
+.flex, .header, .about__box-container, .aboutsecond__container, .learning__container, .merit__container, .teacher__container, .answer__container, .answer__member {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -528,5 +528,42 @@ img {
   top: 100%;
   left: 50%;
   margin-left: -15px;
+}
+
+.answer {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.answer__top > p {
+  color: #777;
+  padding: 20px 0;
+}
+
+.answer__member {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 30px;
+}
+
+.answer__img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 3px solid #ebb94d;
+  margin-right: 10px;
+}
+
+.answer__texts {
+  text-align: left;
+  font-style: italic;
+  color: #777;
+}
+
+.answer__span {
+  border-bottom: 1px solid #777;
 }
 /*# sourceMappingURL=style.css.map */

@@ -597,3 +597,55 @@ img {
     margin-left: -15px;
   }
 }
+
+.answer{
+  @extend .content-width;
+
+  text-align: center;
+  padding-top: 40px; 
+
+  &__top{
+    & > h2{
+      @extend .font-lr;
+    }
+    & > h3{
+      @extend .font-sr;
+    }
+    & > p{
+      @extend .font-sr;
+
+      color: #777;
+      padding: 20px 0;
+    }
+  }
+
+  &__container{
+    @extend .flex;
+  }
+
+  &__member{
+    @extend .flex;
+
+    flex-direction: row;
+    margin-bottom: 30px;
+  }
+
+  &__img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #ebb94d;
+    margin-right: 10px;
+  }
+
+  &__texts{
+    @extend .font-sr;
+    text-align: left;
+    font-style: italic;
+    color: #777;
+  }
+
+  &__span{
+    border-bottom: 1px solid #777;
+  }
+}
