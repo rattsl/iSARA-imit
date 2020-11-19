@@ -547,3 +547,53 @@ img {
     }
   }
 }
+
+.why{
+  position: relative;
+  background-color: #ebb94d;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px; 
+
+  &__icon{
+    margin: 0 auto;
+    background-color: $cWhite;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    color: #ebb94d;
+  }
+
+  &__title{
+    @extend .bracket;
+    @extend .content-width;
+    @extend .font-sm;
+
+    line-height: 30px;
+    color: $cWhite;
+    margin-top: 20px;
+
+    &::before{
+      border-top: 4px solid $cWhite;
+      border-left: 4px solid $cWhite;
+    }
+
+    &::after{
+      border-bottom: 4px solid $cWhite;
+      border-right: 4px solid $cWhite;
+    }
+  }
+
+  &::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-top-color: #ebb94d;
+    top: 100%;
+    left: 50%;
+    margin-left: -15px;
+  }
+}

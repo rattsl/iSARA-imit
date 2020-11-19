@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.bracket, .introduction__title, .about__title, .merit__title {
+.bracket, .introduction__title, .about__title, .merit__title, .why__title {
   position: relative;
   line-height: 40px;
   padding: 20px;
@@ -7,7 +7,7 @@
   margin-bottom: 20px;
 }
 
-.bracket::before, .introduction__title::before, .about__title::before, .merit__title::before {
+.bracket::before, .introduction__title::before, .about__title::before, .merit__title::before, .why__title::before {
   content: "";
   position: absolute;
   top: 0;
@@ -20,7 +20,7 @@
           box-sizing: border-box;
 }
 
-.bracket::after, .introduction__title::after, .about__title::after, .merit__title::after {
+.bracket::after, .introduction__title::after, .about__title::after, .merit__title::after, .why__title::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -52,7 +52,7 @@ img {
   font-weight: 600;
 }
 
-.font-sm, .conversion__inner, .about__sub-title, .learning__texts, .merit__title > p, .merit__box > h2, .merit__support > h3 {
+.font-sm, .conversion__inner, .about__sub-title, .learning__texts, .merit__title > p, .merit__box > h2, .merit__support > h3, .why__title {
   font-size: 15px;
   font-weight: 600;
 }
@@ -86,7 +86,7 @@ img {
   padding-bottom: 80px !important;
 }
 
-.content-width, .conversion__inner, .introduction__yellowBracket, .introduction__title, .introduction__texts, .about__title, .about__sub-title, .about__contents, .aboutsecond__title, .aboutsecond__explain, .aboutsecond__container, .aboutsecond__step, .aboutsecond__footer > p, .learning__title, .learning__texts, .learning__container, .learning__conclusion, .merit__title, .merit__container, .merit__box, .merit__support, .merit__support > h2, .merit__support > h3, .merit__support > p, .merit__bottom, .teacher__container, .teacher__box > p {
+.content-width, .conversion__inner, .introduction__yellowBracket, .introduction__title, .introduction__texts, .about__title, .about__sub-title, .about__contents, .aboutsecond__title, .aboutsecond__explain, .aboutsecond__container, .aboutsecond__step, .aboutsecond__footer > p, .learning__title, .learning__texts, .learning__container, .learning__conclusion, .merit__title, .merit__container, .merit__box, .merit__support, .merit__support > h2, .merit__support > h3, .merit__support > p, .merit__bottom, .teacher__container, .teacher__box > p, .why__title {
   width: 95%;
   margin: 0 auto;
   max-width: 1070px;
@@ -482,5 +482,51 @@ img {
 .teacher__box > p {
   color: white;
   margin-bottom: 1rem;
+}
+
+.why {
+  position: relative;
+  background-color: #ebb94d;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.why__icon {
+  margin: 0 auto;
+  background-color: white;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+  color: #ebb94d;
+}
+
+.why__title {
+  line-height: 30px;
+  color: white;
+  margin-top: 20px;
+}
+
+.why__title::before {
+  border-top: 4px solid white;
+  border-left: 4px solid white;
+}
+
+.why__title::after {
+  border-bottom: 4px solid white;
+  border-right: 4px solid white;
+}
+
+.why::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 15px solid transparent;
+  border-top-color: #ebb94d;
+  top: 100%;
+  left: 50%;
+  margin-left: -15px;
 }
 /*# sourceMappingURL=style.css.map */
