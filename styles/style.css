@@ -86,7 +86,7 @@ img {
   padding-bottom: 80px !important;
 }
 
-.content-width, .conversion__inner, .introduction__yellowBracket, .introduction__title, .introduction__texts, .about__title, .about__sub-title, .about__contents, .aboutsecond__title, .aboutsecond__explain, .aboutsecond__container, .aboutsecond__step, .aboutsecond__footer > p, .learning__title, .learning__texts, .learning__container, .learning__conclusion, .merit__title, .merit__container, .merit__box, .merit__support, .merit__support > h2, .merit__support > h3, .merit__support > p, .merit__bottom, .teacher__container, .teacher__box > p, .why__title, .answer, .class__title, .class__container, .class__bottom > p {
+.content-width, .conversion__inner, .introduction__yellowBracket, .introduction__title, .introduction__texts, .about__title, .about__sub-title, .about__contents, .aboutsecond__title, .aboutsecond__explain, .aboutsecond__container, .aboutsecond__step, .aboutsecond__footer > p, .learning__title, .learning__texts, .learning__container, .learning__conclusion, .merit__title, .merit__container, .merit__box, .merit__support, .merit__support > h2, .merit__support > h3, .merit__support > p, .merit__bottom, .teacher__container, .teacher__box > p, .why__title, .answer, .class__title, .class__container, .class__bottom > p, .flow {
   width: 95%;
   margin: 0 auto;
   max-width: 1070px;
@@ -620,5 +620,13 @@ img {
 .class__bottom > p {
   color: white;
   padding: 12px;
+}
+
+.flow {
+  text-align: center;
+}
+
+.flow__icons {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

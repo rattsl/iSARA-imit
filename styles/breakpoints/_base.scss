@@ -719,3 +719,13 @@ img {
     }
   }
 }
+
+.flow{
+  @extend .content-width;
+
+  text-align: center;
+
+  &__icons{
+    display: none;
+  }
+}
