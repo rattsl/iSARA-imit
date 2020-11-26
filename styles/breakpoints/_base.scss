@@ -649,3 +649,73 @@ img {
     border-bottom: 1px solid #777;
   }
 }
+
+.class{
+  background: url("../../images/classbgsp.jpg") center top no-repeat;
+  padding-top: 20px;
+
+  text-align: center;
+
+  &__title{
+    @extend .content-width;
+    padding: 20px 0;
+
+    & > h2{
+      @extend .font-lr;
+      color: $cWhite;
+    }
+
+    & > p{
+      @extend .font-sr;
+      color: $cWhite;
+    }
+  }
+
+  &__container{
+    @extend .flex;
+    @extend .content-width;
+  }
+
+  &__list{
+    background-color: $cWhite; 
+    border: 2px solid #016ea9;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 20px;
+
+    & > p{
+      @extend .font-sm;
+
+      font-weight: 100;
+      background-color: #016ea9;
+      padding: 12px;
+      margin: 0;
+      color: $cWhite;
+    }
+
+    & > ul{
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+
+    & > li{
+      @extend .font-sr;
+      padding: 15px;
+      border-bottom: 1px dotted #e5e5e5;
+      }
+    }
+  }
+
+  &__bottom{
+    background-color: #016ea9;
+    padding: 10px 0;
+
+    & > p{
+      @extend .font-sm;
+      @extend .content-width;
+
+      color: $cWhite;
+      padding: 12px;
+    }
+  }
+}
