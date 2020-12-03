@@ -47,7 +47,7 @@ img {
   vertical-align: bottom;
 }
 
-.font-sr, .aboutsecond__explain, .aboutsecond__step, .aboutsecond__flow, .aboutsecond__flow-t, .aboutsecond__footer, .learning__conclusion, .merit__box > p, .merit__support > p, .merit__bottom, .teacher__title, .teacher__text, .teacher__box > p, .answer__top > h3, .answer__top > p, .answer__texts, .class__title > p, .class__list > ul > li, .bangkok__sub, .bangkok__reason, .bangkok__conc {
+.font-sr, .aboutsecond__explain, .aboutsecond__step, .aboutsecond__flow, .aboutsecond__flow-t, .aboutsecond__footer, .learning__conclusion, .merit__box > p, .merit__support > p, .merit__bottom, .teacher__title, .teacher__text, .teacher__box > p, .answer__top > h3, .answer__top > p, .answer__texts, .class__title > p, .class__list > ul > li, .bangkok__sub, .bangkok__reason, .bangkok__conc, .special__title, .special__sub, .special__real, .special__icon, .special__texts {
   font-size: 12px;
   font-weight: 600;
 }
@@ -86,7 +86,7 @@ img {
   padding-bottom: 80px !important;
 }
 
-.content-width, .conversion__inner, .introduction__yellowBracket, .introduction__title, .introduction__texts, .about__title, .about__sub-title, .about__contents, .aboutsecond__title, .aboutsecond__explain, .aboutsecond__container, .aboutsecond__step, .aboutsecond__footer > p, .learning__title, .learning__texts, .learning__container, .learning__conclusion, .merit__title, .merit__container, .merit__box, .merit__support, .merit__support > h2, .merit__support > h3, .merit__support > p, .merit__bottom, .teacher__container, .teacher__box > p, .why__title, .answer, .class__title, .class__container, .class__bottom > p, .flow, .bangkok__title, .bangkok__sub, .bangkok__reasons, .bangkok__conc {
+.content-width, .conversion__inner, .introduction__yellowBracket, .introduction__title, .introduction__texts, .about__title, .about__sub-title, .about__contents, .aboutsecond__title, .aboutsecond__explain, .aboutsecond__container, .aboutsecond__step, .aboutsecond__footer > p, .learning__title, .learning__texts, .learning__container, .learning__conclusion, .merit__title, .merit__container, .merit__box, .merit__support, .merit__support > h2, .merit__support > h3, .merit__support > p, .merit__bottom, .teacher__container, .teacher__box > p, .why__title, .answer, .class__title, .class__container, .class__bottom > p, .flow, .bangkok__title, .bangkok__sub, .bangkok__reasons, .bangkok__conc, .special__title, .special__sub, .special__container {
   width: 95%;
   margin: 0 auto;
   max-width: 1070px;
@@ -103,7 +103,7 @@ img {
   font-weight: 600;
 }
 
-.flex, .header, .about__box-container, .aboutsecond__container, .learning__container, .merit__container, .teacher__container, .answer__container, .answer__member, .class__container, .flow__link {
+.flex, .header, .about__box-container, .aboutsecond__container, .learning__container, .merit__container, .teacher__container, .answer__container, .answer__member, .class__container, .flow__link, .special__box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -701,5 +701,70 @@ img {
 
 .bangkok__conc {
   width: 85%;
+}
+
+.special {
+  background-color: #f7c23c;
+  padding: 25px 0;
+  text-align: center;
+}
+
+.special__title {
+  margin: 20px 0;
+}
+
+.special__sub {
+  width: 85%;
+  padding-top: 10px;
+}
+
+.special__enph {
+  color: white;
+}
+
+.special__real {
+  position: relative;
+  -webkit-transform: translateY(35px);
+          transform: translateY(35px);
+  z-index: 10;
+  background-color: #f7c23c;
+  width: 250px;
+  margin: 0 auto;
+}
+
+.special__container {
+  position: relative;
+  border: 2px solid white;
+  padding: 30px 0;
+  z-index: 1;
+}
+
+.special__box {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 10px;
+}
+
+.special__icon {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: white;
+  margin: 15px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+  color: #f7c23c;
+}
+
+.special__texts {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  color: white;
+  margin: 16px 0;
 }
 /*# sourceMappingURL=style.css.map */
