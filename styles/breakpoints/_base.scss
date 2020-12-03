@@ -724,8 +724,47 @@ img {
   @extend .content-width;
 
   text-align: center;
+  padding: 35px 0;
+
+  &__title{
+
+
+    margin-bottom: 20px;
+  }
 
   &__icons{
     display: none;
+  }
+
+  &__links{
+    padding-left: 0;
+  }
+
+  &__link{
+    @extend .flex;
+
+    list-style: none;
+    flex-direction: row;
+    background-color: #fef5e0;
+    margin: 5px 0;
+    align-items: center;
+    // justify-content: space-around;
+
+    & > p{
+      margin: 0;
+      flex-grow: 2;
+    }
+  }
+
+  &__leftimg{
+    width: 40px;
+    height: auto;
+    margin: 10px; 
+  }
+
+  &__rightimg{
+    height: 20px;
+    width: auto;
+    margin: 10px;
   }
 }

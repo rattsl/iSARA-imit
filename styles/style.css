@@ -103,7 +103,7 @@ img {
   font-weight: 600;
 }
 
-.flex, .header, .about__box-container, .aboutsecond__container, .learning__container, .merit__container, .teacher__container, .answer__container, .answer__member, .class__container {
+.flex, .header, .about__box-container, .aboutsecond__container, .learning__container, .merit__container, .teacher__container, .answer__container, .answer__member, .class__container, .flow__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -624,9 +624,50 @@ img {
 
 .flow {
   text-align: center;
+  padding: 35px 0;
+}
+
+.flow__title {
+  margin-bottom: 20px;
 }
 
 .flow__icons {
   display: none;
+}
+
+.flow__links {
+  padding-left: 0;
+}
+
+.flow__link {
+  list-style: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #fef5e0;
+  margin: 5px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flow__link > p {
+  margin: 0;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+}
+
+.flow__leftimg {
+  width: 40px;
+  height: auto;
+  margin: 10px;
+}
+
+.flow__rightimg {
+  height: 20px;
+  width: auto;
+  margin: 10px;
 }
 /*# sourceMappingURL=style.css.map */
