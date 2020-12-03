@@ -47,12 +47,12 @@ img {
   vertical-align: bottom;
 }
 
-.font-sr, .aboutsecond__explain, .aboutsecond__step, .aboutsecond__flow, .aboutsecond__flow-t, .aboutsecond__footer, .learning__conclusion, .merit__box > p, .merit__support > p, .merit__bottom, .teacher__title, .teacher__text, .teacher__box > p, .answer__top > h3, .answer__top > p, .answer__texts, .class__title > p, .class__list > ul > li {
+.font-sr, .aboutsecond__explain, .aboutsecond__step, .aboutsecond__flow, .aboutsecond__flow-t, .aboutsecond__footer, .learning__conclusion, .merit__box > p, .merit__support > p, .merit__bottom, .teacher__title, .teacher__text, .teacher__box > p, .answer__top > h3, .answer__top > p, .answer__texts, .class__title > p, .class__list > ul > li, .bangkok__sub, .bangkok__reason, .bangkok__conc {
   font-size: 12px;
   font-weight: 600;
 }
 
-.font-sm, .conversion__inner, .about__sub-title, .learning__texts, .merit__title > p, .merit__box > h2, .merit__support > h3, .why__title, .class__list > p, .class__bottom > p {
+.font-sm, .conversion__inner, .about__sub-title, .learning__texts, .merit__title > p, .merit__box > h2, .merit__support > h3, .why__title, .class__list > p, .class__bottom > p, .bangkok__title {
   font-size: 15px;
   font-weight: 600;
 }
@@ -86,7 +86,7 @@ img {
   padding-bottom: 80px !important;
 }
 
-.content-width, .conversion__inner, .introduction__yellowBracket, .introduction__title, .introduction__texts, .about__title, .about__sub-title, .about__contents, .aboutsecond__title, .aboutsecond__explain, .aboutsecond__container, .aboutsecond__step, .aboutsecond__footer > p, .learning__title, .learning__texts, .learning__container, .learning__conclusion, .merit__title, .merit__container, .merit__box, .merit__support, .merit__support > h2, .merit__support > h3, .merit__support > p, .merit__bottom, .teacher__container, .teacher__box > p, .why__title, .answer, .class__title, .class__container, .class__bottom > p, .flow {
+.content-width, .conversion__inner, .introduction__yellowBracket, .introduction__title, .introduction__texts, .about__title, .about__sub-title, .about__contents, .aboutsecond__title, .aboutsecond__explain, .aboutsecond__container, .aboutsecond__step, .aboutsecond__footer > p, .learning__title, .learning__texts, .learning__container, .learning__conclusion, .merit__title, .merit__container, .merit__box, .merit__support, .merit__support > h2, .merit__support > h3, .merit__support > p, .merit__bottom, .teacher__container, .teacher__box > p, .why__title, .answer, .class__title, .class__container, .class__bottom > p, .flow, .bangkok__title, .bangkok__sub, .bangkok__reasons, .bangkok__conc {
   width: 95%;
   margin: 0 auto;
   max-width: 1070px;
@@ -669,5 +669,37 @@ img {
   height: 20px;
   width: auto;
   margin: 10px;
+}
+
+.bangkok {
+  background: url("../../images/bangkokbgsp.jpg") center top no-repeat;
+  background-size: cover;
+  padding: 30px 0;
+  color: white;
+}
+
+.bangkok__title {
+  margin: 15px 0;
+  text-align: center;
+}
+
+.bangkok__sub {
+  font-weight: 100;
+  text-align: center;
+  width: 85%;
+  letter-spacing: 0.5px;
+}
+
+.bangkok__reasons {
+  width: 85%;
+  padding: 10px 0;
+}
+
+.bangkok__reason {
+  margin-bottom: 0.8rem;
+}
+
+.bangkok__conc {
+  width: 85%;
 }
 /*# sourceMappingURL=style.css.map */

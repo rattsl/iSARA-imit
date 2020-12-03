@@ -768,3 +768,49 @@ img {
     margin: 10px;
   }
 }
+
+.bangkok{
+  background: url("../../images/bangkokbgsp.jpg") center top no-repeat;
+  background-size: cover;
+
+  padding: 30px 0;
+  color: $cWhite;
+
+  &__title{
+    @extend .content-width;
+    @extend .font-sm;
+
+    margin: 15px 0;
+    text-align: center;
+  }
+
+  &__sub{
+    @extend .content-width;
+    @extend .font-sr;
+
+    font-weight: 100;
+    text-align: center;
+    width: 85%;
+    letter-spacing: 0.5px;
+  }
+
+  &__reasons{
+    @extend .content-width;
+
+    width: 85%;
+    padding: 10px 0;
+  }
+
+  &__reason{
+    @extend .font-sr;
+
+    margin-bottom: 0.8rem;
+  }
+
+  &__conc{
+    @extend .content-width;
+    @extend .font-sr;
+
+    width: 85%;
+  }
+}
