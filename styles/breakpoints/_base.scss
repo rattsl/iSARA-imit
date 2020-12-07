@@ -6,6 +6,7 @@ Stylesheet: ベーススタイル(スマホ)
 
 body{
   letter-spacing: 1.5px;
+  color: #333333;
 }
 
 img {
@@ -932,4 +933,40 @@ img {
 
     padding: 20px 0;
   }
+}
+
+.message{
+  @extend .content-width;
+
+  padding: 20px 0;
+
+  &__title{
+    @extend .font-sr;
+
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  &__sub{
+    @extend .font-sm;
+
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  &__container{
+    @extend .flex;
+  }
+
+  &__texts{
+    @extend .font-sm;
+
+    font-weight: 300;
+    margin: 1em 0;
+
+    & > ul{
+      padding-left: 20px;
+    }
+  }
+
 }

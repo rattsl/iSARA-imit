@@ -40,6 +40,7 @@ Stylesheet: ベーススタイル(スマホ)
 ******************************************************************/
 body {
   letter-spacing: 1.5px;
+  color: #333333;
 }
 
 img {
@@ -47,12 +48,12 @@ img {
   vertical-align: bottom;
 }
 
-.font-sr, .aboutsecond__explain, .aboutsecond__step, .aboutsecond__flow, .aboutsecond__flow-t, .aboutsecond__footer, .learning__conclusion, .merit__box > p, .merit__support > p, .merit__bottom, .teacher__title, .teacher__text, .teacher__box > p, .answer__top > h3, .answer__top > p, .answer__texts, .class__title > p, .class__list > ul > li, .bangkok__sub, .bangkok__reason, .bangkok__conc, .special__title, .special__sub, .special__real, .special__icon, .special__texts, .specialdetail__title, .specialdetail__sub, .specialdetail__conc {
+.font-sr, .aboutsecond__explain, .aboutsecond__step, .aboutsecond__flow, .aboutsecond__flow-t, .aboutsecond__footer, .learning__conclusion, .merit__box > p, .merit__support > p, .merit__bottom, .teacher__title, .teacher__text, .teacher__box > p, .answer__top > h3, .answer__top > p, .answer__texts, .class__title > p, .class__list > ul > li, .bangkok__sub, .bangkok__reason, .bangkok__conc, .special__title, .special__sub, .special__real, .special__icon, .special__texts, .specialdetail__title, .specialdetail__sub, .specialdetail__conc, .message__title {
   font-size: 12px;
   font-weight: 600;
 }
 
-.font-sm, .conversion__inner, .about__sub-title, .learning__texts, .merit__title > p, .merit__box > h2, .merit__support > h3, .why__title, .class__list > p, .class__bottom > p, .bangkok__title {
+.font-sm, .conversion__inner, .about__sub-title, .learning__texts, .merit__title > p, .merit__box > h2, .merit__support > h3, .why__title, .class__list > p, .class__bottom > p, .bangkok__title, .message__sub, .message__texts {
   font-size: 15px;
   font-weight: 600;
 }
@@ -86,7 +87,7 @@ img {
   padding-bottom: 80px !important;
 }
 
-.content-width, .conversion__inner, .introduction__yellowBracket, .introduction__title, .introduction__texts, .about__title, .about__sub-title, .about__contents, .aboutsecond__title, .aboutsecond__explain, .aboutsecond__container, .aboutsecond__step, .aboutsecond__footer > p, .learning__title, .learning__texts, .learning__container, .learning__conclusion, .merit__title, .merit__container, .merit__box, .merit__support, .merit__support > h2, .merit__support > h3, .merit__support > p, .merit__bottom, .teacher__container, .teacher__box > p, .why__title, .answer, .class__title, .class__container, .class__bottom > p, .flow, .bangkok__title, .bangkok__sub, .bangkok__reasons, .bangkok__conc, .special__title, .special__sub, .special__container, .specialdetail__title, .specialdetail__sub, .specialdetail__bracket {
+.content-width, .conversion__inner, .introduction__yellowBracket, .introduction__title, .introduction__texts, .about__title, .about__sub-title, .about__contents, .aboutsecond__title, .aboutsecond__explain, .aboutsecond__container, .aboutsecond__step, .aboutsecond__footer > p, .learning__title, .learning__texts, .learning__container, .learning__conclusion, .merit__title, .merit__container, .merit__box, .merit__support, .merit__support > h2, .merit__support > h3, .merit__support > p, .merit__bottom, .teacher__container, .teacher__box > p, .why__title, .answer, .class__title, .class__container, .class__bottom > p, .flow, .bangkok__title, .bangkok__sub, .bangkok__reasons, .bangkok__conc, .special__title, .special__sub, .special__container, .specialdetail__title, .specialdetail__sub, .specialdetail__bracket, .message {
   width: 95%;
   margin: 0 auto;
   max-width: 1070px;
@@ -103,7 +104,7 @@ img {
   font-weight: 600;
 }
 
-.flex, .header, .about__box-container, .aboutsecond__container, .learning__container, .merit__container, .teacher__container, .answer__container, .answer__member, .class__container, .flow__link, .special__box {
+.flex, .header, .about__box-container, .aboutsecond__container, .learning__container, .merit__container, .teacher__container, .answer__container, .answer__member, .class__container, .flow__link, .special__box, .message__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -791,5 +792,28 @@ img {
 
 .specialdetail__conc {
   padding: 20px 0;
+}
+
+.message {
+  padding: 20px 0;
+}
+
+.message__title {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.message__sub {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.message__texts {
+  font-weight: 300;
+  margin: 1em 0;
+}
+
+.message__texts > ul {
+  padding-left: 20px;
 }
 /*# sourceMappingURL=style.css.map */
