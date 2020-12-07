@@ -889,3 +889,47 @@ img {
     margin: 16px 0;
   }
 }
+
+.specialdetail{
+  background: url("../../images/specialdetailsp.jpg") center top no-repeat;
+  color: $cWhite;
+  text-align: center;
+  padding: 20px 0;
+
+  &__title{
+    @extend .content-width;
+    @extend .font-sr;
+
+    padding: 20px 0;
+  }
+
+  &__sub{
+    @extend .font-sr; 
+    @extend .content-width;
+  }
+
+  &__bracket{
+    @extend .bracket;
+    @extend .content-width;
+
+    & > h2{
+      @extend .font-lr;
+    }
+
+    &::before{
+      border-top: 4px solid $cWhite;
+      border-left: 4px solid $cWhite;
+    }
+
+    &::after{
+      border-bottom: 4px solid $cWhite;
+      border-right: 4px solid $cWhite;
+    }
+  }
+
+  &__conc{
+    @extend .font-sr;
+
+    padding: 20px 0;
+  }
+}

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.bracket, .introduction__title, .about__title, .merit__title, .why__title {
+.bracket, .introduction__title, .about__title, .merit__title, .why__title, .specialdetail__bracket {
   position: relative;
   line-height: 40px;
   padding: 20px;
@@ -7,7 +7,7 @@
   margin-bottom: 20px;
 }
 
-.bracket::before, .introduction__title::before, .about__title::before, .merit__title::before, .why__title::before {
+.bracket::before, .introduction__title::before, .about__title::before, .merit__title::before, .why__title::before, .specialdetail__bracket::before {
   content: "";
   position: absolute;
   top: 0;
@@ -20,7 +20,7 @@
           box-sizing: border-box;
 }
 
-.bracket::after, .introduction__title::after, .about__title::after, .merit__title::after, .why__title::after {
+.bracket::after, .introduction__title::after, .about__title::after, .merit__title::after, .why__title::after, .specialdetail__bracket::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -47,7 +47,7 @@ img {
   vertical-align: bottom;
 }
 
-.font-sr, .aboutsecond__explain, .aboutsecond__step, .aboutsecond__flow, .aboutsecond__flow-t, .aboutsecond__footer, .learning__conclusion, .merit__box > p, .merit__support > p, .merit__bottom, .teacher__title, .teacher__text, .teacher__box > p, .answer__top > h3, .answer__top > p, .answer__texts, .class__title > p, .class__list > ul > li, .bangkok__sub, .bangkok__reason, .bangkok__conc, .special__title, .special__sub, .special__real, .special__icon, .special__texts {
+.font-sr, .aboutsecond__explain, .aboutsecond__step, .aboutsecond__flow, .aboutsecond__flow-t, .aboutsecond__footer, .learning__conclusion, .merit__box > p, .merit__support > p, .merit__bottom, .teacher__title, .teacher__text, .teacher__box > p, .answer__top > h3, .answer__top > p, .answer__texts, .class__title > p, .class__list > ul > li, .bangkok__sub, .bangkok__reason, .bangkok__conc, .special__title, .special__sub, .special__real, .special__icon, .special__texts, .specialdetail__title, .specialdetail__sub, .specialdetail__conc {
   font-size: 12px;
   font-weight: 600;
 }
@@ -61,7 +61,7 @@ img {
   font-size: 18px;
 }
 
-.font-lr, .introduction__title, .about__title, .aboutsecond__title, .learning__title, .merit__title > h2, .merit__support > h2, .answer__top > h2, .class__title > h2 {
+.font-lr, .introduction__title, .about__title, .aboutsecond__title, .learning__title, .merit__title > h2, .merit__support > h2, .answer__top > h2, .class__title > h2, .specialdetail__bracket > h2 {
   font-size: 18px;
   font-weight: 600;
 }
@@ -86,7 +86,7 @@ img {
   padding-bottom: 80px !important;
 }
 
-.content-width, .conversion__inner, .introduction__yellowBracket, .introduction__title, .introduction__texts, .about__title, .about__sub-title, .about__contents, .aboutsecond__title, .aboutsecond__explain, .aboutsecond__container, .aboutsecond__step, .aboutsecond__footer > p, .learning__title, .learning__texts, .learning__container, .learning__conclusion, .merit__title, .merit__container, .merit__box, .merit__support, .merit__support > h2, .merit__support > h3, .merit__support > p, .merit__bottom, .teacher__container, .teacher__box > p, .why__title, .answer, .class__title, .class__container, .class__bottom > p, .flow, .bangkok__title, .bangkok__sub, .bangkok__reasons, .bangkok__conc, .special__title, .special__sub, .special__container {
+.content-width, .conversion__inner, .introduction__yellowBracket, .introduction__title, .introduction__texts, .about__title, .about__sub-title, .about__contents, .aboutsecond__title, .aboutsecond__explain, .aboutsecond__container, .aboutsecond__step, .aboutsecond__footer > p, .learning__title, .learning__texts, .learning__container, .learning__conclusion, .merit__title, .merit__container, .merit__box, .merit__support, .merit__support > h2, .merit__support > h3, .merit__support > p, .merit__bottom, .teacher__container, .teacher__box > p, .why__title, .answer, .class__title, .class__container, .class__bottom > p, .flow, .bangkok__title, .bangkok__sub, .bangkok__reasons, .bangkok__conc, .special__title, .special__sub, .special__container, .specialdetail__title, .specialdetail__sub, .specialdetail__bracket {
   width: 95%;
   margin: 0 auto;
   max-width: 1070px;
@@ -766,5 +766,30 @@ img {
           flex: 4;
   color: white;
   margin: 16px 0;
+}
+
+.specialdetail {
+  background: url("../../images/specialdetailsp.jpg") center top no-repeat;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.specialdetail__title {
+  padding: 20px 0;
+}
+
+.specialdetail__bracket::before {
+  border-top: 4px solid white;
+  border-left: 4px solid white;
+}
+
+.specialdetail__bracket::after {
+  border-bottom: 4px solid white;
+  border-right: 4px solid white;
+}
+
+.specialdetail__conc {
+  padding: 20px 0;
 }
 /*# sourceMappingURL=style.css.map */
