@@ -4,6 +4,11 @@ Stylesheet: ベーススタイル(スマホ)
 
 ******************************************************************/
 
+* {
+  padding: 0;
+  margin: 0;
+}
+
 body{
   letter-spacing: 1.5px;
   color: #333333;
@@ -1060,5 +1065,26 @@ img {
       @extend .font-sm;
       margin: 0;
     }
+  }
+}
+
+.footer{
+  @extend .font-sr;
+
+  background-color: #ececec;
+  text-align: center;
+  font-weight: 300;
+  font-size: 10px;
+
+  &__copyrightt{
+    padding: 1em 0;
+  }
+
+  &__copyrightb{
+    padding-bottom: 1px;
+  }
+
+  &__enph{
+    color: #016ea9;
   }
 }

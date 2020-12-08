@@ -38,6 +38,11 @@
 Stylesheet: ベーススタイル(スマホ)
 
 ******************************************************************/
+* {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   letter-spacing: 1.5px;
   color: #333333;
@@ -48,7 +53,7 @@ img {
   vertical-align: bottom;
 }
 
-.font-sr, .aboutsecond__explain, .aboutsecond__step, .aboutsecond__flow, .aboutsecond__flow-t, .aboutsecond__footer, .learning__conclusion, .merit__box > p, .merit__support > p, .merit__bottom, .teacher__title, .teacher__text, .teacher__box > p, .answer__top > h3, .answer__top > p, .answer__texts, .class__title > p, .class__list > ul > li, .flow__title, .bangkok__sub, .bangkok__reason, .bangkok__conc, .special__title, .special__sub, .special__real, .special__icon, .special__texts, .specialdetail__title, .specialdetail__sub, .specialdetail__conc, .message__title, .contactform__title, .contactform__sub, .questions__title {
+.font-sr, .aboutsecond__explain, .aboutsecond__step, .aboutsecond__flow, .aboutsecond__flow-t, .aboutsecond__footer, .learning__conclusion, .merit__box > p, .merit__support > p, .merit__bottom, .teacher__title, .teacher__text, .teacher__box > p, .answer__top > h3, .answer__top > p, .answer__texts, .class__title > p, .class__list > ul > li, .flow__title, .bangkok__sub, .bangkok__reason, .bangkok__conc, .special__title, .special__sub, .special__real, .special__icon, .special__texts, .specialdetail__title, .specialdetail__sub, .specialdetail__conc, .message__title, .contactform__title, .contactform__sub, .questions__title, .footer {
   font-size: 12px;
   font-weight: 600;
 }
@@ -904,5 +909,24 @@ img {
 
 .questions__question > p {
   margin: 0;
+}
+
+.footer {
+  background-color: #ececec;
+  text-align: center;
+  font-weight: 300;
+  font-size: 10px;
+}
+
+.footer__copyrightt {
+  padding: 1em 0;
+}
+
+.footer__copyrightb {
+  padding-bottom: 1px;
+}
+
+.footer__enph {
+  color: #016ea9;
 }
 /*# sourceMappingURL=style.css.map */
