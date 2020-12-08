@@ -48,7 +48,7 @@ img {
   vertical-align: bottom;
 }
 
-.font-sr, .aboutsecond__explain, .aboutsecond__step, .aboutsecond__flow, .aboutsecond__flow-t, .aboutsecond__footer, .learning__conclusion, .merit__box > p, .merit__support > p, .merit__bottom, .teacher__title, .teacher__text, .teacher__box > p, .answer__top > h3, .answer__top > p, .answer__texts, .class__title > p, .class__list > ul > li, .bangkok__sub, .bangkok__reason, .bangkok__conc, .special__title, .special__sub, .special__real, .special__icon, .special__texts, .specialdetail__title, .specialdetail__sub, .specialdetail__conc, .message__title {
+.font-sr, .aboutsecond__explain, .aboutsecond__step, .aboutsecond__flow, .aboutsecond__flow-t, .aboutsecond__footer, .learning__conclusion, .merit__box > p, .merit__support > p, .merit__bottom, .teacher__title, .teacher__text, .teacher__box > p, .answer__top > h3, .answer__top > p, .answer__texts, .class__title > p, .class__list > ul > li, .flow__title, .bangkok__sub, .bangkok__reason, .bangkok__conc, .special__title, .special__sub, .special__real, .special__icon, .special__texts, .specialdetail__title, .specialdetail__sub, .specialdetail__conc, .message__title, .contactform__title, .contactform__sub {
   font-size: 12px;
   font-weight: 600;
 }
@@ -629,7 +629,7 @@ img {
 }
 
 .flow__title {
-  margin-bottom: 20px;
+  padding: 20px 0;
 }
 
 .flow__icons {
@@ -711,7 +711,7 @@ img {
 }
 
 .special__title {
-  margin: 20px 0;
+  padding: 20px 0;
 }
 
 .special__sub {
@@ -815,5 +815,58 @@ img {
 
 .message__texts > ul {
   padding-left: 20px;
+}
+
+.contactform {
+  background-color: #ebb94d;
+  text-align: center;
+  padding: 2em 0;
+}
+
+.contactform__title {
+  padding: 1em 0;
+}
+
+.contactform__sub {
+  letter-spacing: 1.5px;
+  padding: 1em 0;
+}
+
+.contactform__forms {
+  list-style: none;
+  padding-left: 0;
+}
+
+.contactform__form {
+  height: 3.5rem;
+  width: 80%;
+  margin: 1em 0;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 0.8em;
+}
+
+.contactform__textarea {
+  height: 7em;
+  width: 80%;
+  margin: 1em 0;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 0.8em;
+}
+
+.contactform__submitbutton {
+  height: 2.5em;
+  width: 330px;
+  background-color: #da6b64;
+  color: #fff;
+  padding: 10px 80px;
+  margin: 1em 0;
+  border-radius: 50px;
+  font-size: 23px;
+  font-weight: 600;
+  border: none;
 }
 /*# sourceMappingURL=style.css.map */
