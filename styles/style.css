@@ -103,13 +103,13 @@ img {
   margin-bottom: 0;
 }
 
-.sub-title {
+.sub-title, .header__sub {
   font-size: 10px;
   margin-bottom: 0;
   font-weight: 600;
 }
 
-.flex, .header, .about__box-container, .aboutsecond__container, .learning__container, .merit__container, .teacher__container, .answer__container, .answer__member, .class__container, .flow__link, .special__box, .message__container, .questions__question {
+.flex, .header, .header__inner, .about__box-container, .aboutsecond__container, .learning__container, .merit__container, .teacher__container, .answer__container, .answer__member, .class__container, .flow__link, .special__box, .message__container, .questions__question {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -141,18 +141,22 @@ img {
   width: 40%;
 }
 
-.header__form {
+.header__form-d {
+  display: none;
+}
+
+.header__form-s {
   height: 62px;
   padding: 9px 11px;
   text-align: center;
   background-color: #da6b64;
 }
 
-.header__form > img {
+.header__form-s > img {
   width: 20px;
 }
 
-.header__form > p {
+.header__form-s > p {
   margin-bottom: 0;
   color: white;
   font-size: 12px;
@@ -185,6 +189,7 @@ img {
   text-align: center;
   background-color: #ebb94d;
   color: white;
+  padding: 20px 0;
 }
 
 .conversion__enph {
@@ -208,6 +213,10 @@ img {
 
 .conversion__button > p {
   margin-bottom: 0;
+}
+
+.introduction {
+  padding-top: 20px;
 }
 
 .introduction__yellowBracket {
@@ -653,6 +662,7 @@ img {
           flex-direction: row;
   background-color: #fef5e0;
   margin: 5px 0;
+  padding-right: 10px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -665,15 +675,9 @@ img {
           flex-grow: 2;
 }
 
-.flow__leftimg {
-  width: 40px;
+.flow__img {
+  width: 38px;
   height: auto;
-  margin: 10px;
-}
-
-.flow__rightimg {
-  height: 20px;
-  width: auto;
   margin: 10px;
 }
 
@@ -928,5 +932,52 @@ img {
 
 .footer__enph {
   color: #016ea9;
+}
+
+@media (min-width: 600px) {
+  /******************************************************************
+Stylesheet: 通常ディスプレイサイズ
+******************************************************************/
+  .content-width-d, .header {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1070px;
+  }
+  .header {
+    height: 75px;
+  }
+  .header__inner {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .header__logo {
+    width: 140px;
+    height: auto;
+  }
+  .header__sub {
+    font-size: 14px;
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+  }
+  .header__form-d {
+    display: inline-block;
+  }
+  .header__form-d > button {
+    background-color: #da6b64;
+    cursor: pointer;
+    color: #fff;
+    padding: 11px 40px;
+    border-radius: 25px;
+    border: none;
+    font-size: 14px;
+  }
+  .header__form-s {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

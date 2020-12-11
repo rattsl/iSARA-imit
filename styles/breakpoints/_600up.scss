@@ -1,0 +1,52 @@
+/******************************************************************
+Stylesheet: 通常ディスプレイサイズ
+******************************************************************/
+
+.content-width-d{
+  width: 80%;
+  margin: 0 auto;
+  max-width: $contentMaxWidth;
+}
+
+.header{
+  @extend .content-width-d;
+
+  height: 75px;
+
+  &__inner{
+    flex-direction: row-reverse;
+    align-items: flex-end;
+  }
+
+  &__logo{
+    width: 140px;
+    height: auto;
+  }
+
+  &__sub{
+    font-size: 14px;
+    transform: translateY(-2px);
+  }
+
+  &__form-d{
+    display: inline-block;
+
+    & > button{
+      background-color: #da6b64; 
+      cursor: pointer;
+      color: #fff;
+      padding: 11px 40px;
+      border-radius: 25px;
+      border: none;
+      font-size: 14px;
+    }
+  }
+
+  &__form-s{
+    display: none;
+  }
+
+
+
+
+}
